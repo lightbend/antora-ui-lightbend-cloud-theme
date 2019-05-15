@@ -1,0 +1,73 @@
+:root {
+  --color-text: #1c3b47;
+  --color-navbar-bg: #ff931e;
+  --color-navbar-bg-focus: #1c3b47;
+  --color-navbar-text: #ffffff;
+  --color-lb-orange: #ff931e;
+  --color-lb-orange-dkr: #f48122;
+  --color-lb-orange-ltr: #ffa94b;
+  --color-lb-slate: #1c3b47;
+  --color-lb-slate-dkr: #0c323b;
+  --color-lb-slate-ltr: #406972;
+  --color-lb-grey: #454e57;
+  --color-lb-grey-dkr: #31373B;
+  --color-lb-off-white: #f5f6f7;
+  --color-lb-off-white-dkr: #ebeef0;
+  --color-lb-light-grey: #c5d0d4;
+  --color-lb-light-grey-dkr: #9eb1b7;
+  --color-lb-light-grey-ltr: #f3f6f6;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1em;
+  text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+body {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+kbd,
+pre {
+  font-family: 'Source Code Pro', monospace;
+}
+
+b,
+dt,
+strong,
+th {
+  font-weight: 500;
+}

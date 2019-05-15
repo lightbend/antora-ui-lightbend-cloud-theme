@@ -1,0 +1,43 @@
+<article class="doc">
+	{{#if (eq page.layout '404')}}
+		<h1>{{{or page.title 'Page Not Found'}}}</h1>
+		<div class="paragraph">
+		<p>The page you're looking for does not exist. It may have been moved.</p>
+		</div>
+		<div class="paragraph">
+		<p>If you arrived on this page by clicking on a link, please notify the owner of the site that the link is broken.
+		If you typed the URL of this page manually, please double check that you entered the address correctly.</p>
+		</div>
+	{{else}}
+		{{#if page.title}}
+			<h1>{{{page.title}}}</h1>
+		{{/if}}
+
+		<fieldset class="supergroup-switch">
+			{{#if page.attributes.supergroup-platform}}
+				<label>{{page.attributes.supergroup-platform}}</label>
+				<select class="supergroup" name="Platform">
+					<option class="group" value="group-minishift">Minishift</option>
+					<option class="group" value="group-minikube">Minikube</option>
+				</select>
+			{{/if}}
+			{{#if page.attributes.supergroup-projects}}
+				<label>{{page.attributes.supergroup-projects}}</label>
+				<select class="supergroup" name="Projects">
+					<option class="group" value="group-play">Play</option>
+					<option class="group" value="group-akka">Akka</option>
+					<option class="group" value="group-lagom">Lagom</option>
+				</select>
+			{{/if}}
+			{{#if page.attributes.supergroup-language}}
+				<label>{{page.attributes.supergroup-language}}</label>
+				<select class="supergroup" name="Language">
+					<option class="group" value="group-scala">Scala</option>
+					<option class="group" value="group-java">Java</option>
+				</select>
+			{{/if}}
+		</fieldset>
+		
+		{{{page.contents}}}
+	{{/if}}
+</article>
