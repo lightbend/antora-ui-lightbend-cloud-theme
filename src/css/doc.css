@@ -86,7 +86,7 @@
 /* what about td/th code? */
 .doc p code {
   font-size: 0.9em;
-  background-color: #fafafa;
+  background-color: var(--color-lb-off-white);
   padding: 0.075rem 0.25rem 0.125rem;
   border-radius: 0.2rem;
   /* font-weight: 300; */
@@ -169,7 +169,7 @@
 }
 
 .doc .admonitionblock {
-  margin: 1.4rem 0 0;
+  margin: 2.25rem 0 0;
 }
 
 .doc .admonitionblock p,
@@ -193,8 +193,8 @@
 }
 
 .doc .admonitionblock td.content {
-  padding: 1rem 1rem 0.75rem;
-  background-color: #fafafa;
+  padding: 1.5rem 1rem 0.75rem;
+  background-color: var(--color-lb-off-white);
   width: 100%;
 }
 
@@ -203,10 +203,10 @@
   top: 0;
   left: 0;
   font-size: 0.75rem;
-  padding: 0 0.5rem;
-  height: 1.25rem;
+  padding: .75rem .6rem;
   line-height: 1;
-  font-weight: 500;
+  vertical-align: middle;
+  font-weight: 700;
   text-transform: uppercase;
   border-radius: 0.45rem;
   color: #fff;
@@ -214,23 +214,33 @@
 }
 
 .doc .admonitionblock.caution .icon {
-  background-color: #a0439c;
+  background: #ffbf00 url(../img/caution-white.svg) no-repeat left;
+  background-position: 5px center;
+  background-size: 30px
 }
 
 .doc .admonitionblock.important .icon {
-  background-color: #d32f2f;
+  background: #B33A3A url(../img/important-white.svg) no-repeat left;
+  background-position: 5px center;
+  background-size: 30px
 }
 
 .doc .admonitionblock.note .icon {
-  background-color: #217ee7;
+  background: var(--color-lb-orange) url(../img/note-white.svg) no-repeat left;
+  background-position: 5px center;
+  background-size: 30px
 }
 
 .doc .admonitionblock.tip .icon {
-  background-color: #41af46;
+  background: var(--color-lb-orange) url(../img/tip-white.svg) no-repeat left;
+  background-position: 5px center;
+  background-size: 35px
 }
 
 .doc .admonitionblock.warning .icon {
-  background-color: #e18114;
+  background: #B33A3A url(../img/caution-white.svg) no-repeat left;
+  background-position: 5px center;
+  background-size: 30px
 }
 
 .doc .admonitionblock .icon i {
@@ -242,6 +252,7 @@
 .doc .admonitionblock .icon i::after {
   content: attr(title);
   hyphens: none;
+  padding-left: 1.375rem;
 }
 
 .doc .imageblock {
@@ -304,8 +315,8 @@
 */
 
 #preamble .abstract blockquote {
-  background-color: #f0f0f0;
-  border-left: 5px solid #ddd;
+  background-color: var(--color-lb-off-white);
+  border-left: 5px solid var(--color-lb-orange);
   color: #4a4a4a;
   font-size: 0.9em;
   margin: 0;
@@ -401,7 +412,7 @@
 }
 
 .doc .sidebarblock {
-  background-color: #ebebeb;
+  background-color: var(--color-lb-off-white);
   padding: 0.75rem 1.5rem;
 }
 
@@ -425,7 +436,7 @@
 
 .doc pre:not(.highlight),
 .doc pre.highlight code {
-  background-color: #fafafa;
+  background-color: var(--color-lb-off-white);
   box-shadow: inset 0 0 1.75px #ddd;
   display: block;
   overflow-x: auto;
@@ -514,7 +525,7 @@ b.button::after {
 kbd {
   display: inline-block;
   font-size: 0.7rem;
-  background-color: #fafafa;
+  background-color: var(--color-lb-off-white);
   border: 1px solid #c1c1c1;
   border-radius: 0.25em;
   box-shadow: 0 1px 0 #c1c1c1, 0 0 0 0.1em #fff inset;
@@ -567,10 +578,14 @@ kbd,
   border-bottom: none;
   font-style: normal;
   z-index: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 2;
 }
 .doc dl.tabbed dt.current {
   background: var(--color-lb-off-white);
   border-bottom: 1px solid var(--color-lb-off-white);
+  z-index: 1;
 }
 .doc dl.tabbed dt.first{
   border-radius: 3px 0 0 0;
@@ -582,15 +597,15 @@ kbd,
   position: absolute;
   width: 100%;
   left: 0;
-  top: 40px;
+  top: 38px;
   border-radius: 0 3px 3px 3px;
   border: 1px solid var(--color-lb-off-white-dkr);
   margin: 0 0 2rem 0;
   padding: 1rem;
   background: var(--color-lb-off-white);
-  z-index: -1;
 }
 .doc dl.tabbed dd pre code {
   background-color: transparent;
   box-shadow: none;
+  clear: both;
 }

@@ -24,7 +24,6 @@ $(function() {
 
   // http://www.w3schools.com/js/js_cookies.asp
   function setCookie(cname,cvalue,exdays) {
-    console.log("setCookie")
     if(!exdays) exdays = 365;
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -34,7 +33,6 @@ $(function() {
 
   // http://www.w3schools.com/js/js_cookies.asp
   function getCookie(cname) {
-    console.log("getCookie")
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -79,28 +77,23 @@ $(function() {
   $(".supergroup").each(function() {
     console.log("start-----------------------------------------------");
     var supergroup = $(this).attr('name').toLowerCase();
-    console.log("supergroup "+supergroup);
     var groups = $(this).find(".group");
-    console.log("groups "+groups);
+
+    console.log("found supergroup : "+supergroup);
+
 
     var current = currentGroups[supergroup];
     if (!current) {
       current = "group-" + groups.first().text().toLowerCase();
       currentGroups[supergroup] = current;
     }
-    console.log("current "+current);
-
     catalog[supergroup] = [];
-
-    console.log("catalog "+catalog);
 
     groups.each(function() {
       var group = "group-" + $(this).text().toLowerCase();
       catalog[supergroup].push(group);
       supergroupByGroup[group] = supergroup;
     });
-
-    console.log(catalog);
 
     switchToGroup(supergroup, current);
 
