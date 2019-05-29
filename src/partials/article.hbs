@@ -14,28 +14,57 @@
 		{{/if}}
 
 		<fieldset class="supergroup-switch">
-			{{#if page.attributes.supergroup-platform}}
-				<label>{{page.attributes.supergroup-platform}}</label>
-				<select class="supergroup" name="Platform">
-					<option class="group" value="group-minishift">Minishift</option>
-					<option class="group" value="group-minikube">Minikube</option>
-				</select>
+			{{#if page.attributes.supergroup-scala-java}}
+				<span>
+					<label>{{page.attributes.supergroup-scala-java}}</label>
+					<select class="supergroup" name="supergroup-scala-java">
+						<option class="group" value="group-scala">Scala</option>
+						<option class="group" value="group-java">Java</option>
+					</select>
+				</span>
 			{{/if}}
-			{{#if page.attributes.supergroup-projects}}
-				<label>{{page.attributes.supergroup-projects}}</label>
-				<select class="supergroup" name="Projects">
-					<option class="group" value="group-play">Play</option>
-					<option class="group" value="group-akka">Akka</option>
-					<option class="group" value="group-lagom">Lagom</option>
-				</select>
+
+			{{#if page.attributes.supergroup-sbt-maven}}
+				<span>
+					<label>{{page.attributes.supergroup-sbt-maven}}</label>
+					<select class="supergroup" name="supergroup-sbt-maven">
+						<option class="group" value="group-sbt">sbt</option>
+						<option class="group" value="group-maven">Maven</option>
+					</select>
+				</span>
 			{{/if}}
-			{{#if page.attributes.supergroup-language}}
-				<label>{{page.attributes.supergroup-language}}</label>
-				<select class="supergroup" name="Language">
-					<option class="group" value="group-scala">Scala</option>
-					<option class="group" value="group-java">Java</option>
-				</select>
+
+			{{#if page.attributes.supergroup-sbt-maven-gradle}}
+				<span>
+					<label>{{page.attributes.supergroup-sbt-maven-gradle}}</label>
+					<select class="supergroup" name="supergroup-sbt-maven-gradle">
+						<option class="group" value="group-sbt">sbt</option>
+						<option class="group" value="group-maven">Maven</option>
+						<option class="group" value="group-gradle">Gradle</option>
+					</select>
+				</span>
 			{{/if}}
+
+			{{#if page.attributes.supergroup-minishift-minikube}}
+				<span>
+					<label>{{page.attributes.supergroup-minishift-minikube}}</label>
+					<select class="supergroup" name="supergroup-minishift-minikube">
+						<option class="group" value="group-minishift">Minishift</option>
+						<option class="group" value="group-minikube">Minikube</option>
+					</select>
+				</span>
+			{{/if}}
+
+			{{#if page.attributes.supergroup-kubernetes-openshift}}
+				<span>
+					<label>{{page.attributes.supergroup-kubernetes-openshift}}</label>
+					<select class="supergroup" name="supergroup-kubernetes-openshift">
+						<option class="group" value="group-kubernetes">Kubernetes</option>
+						<option class="group" value="group-openshift">Openshift</option>
+					</select>
+				</span>
+			{{/if}}
+
 		</fieldset>
 		
 		{{{page.contents}}}
