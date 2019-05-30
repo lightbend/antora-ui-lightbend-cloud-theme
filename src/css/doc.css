@@ -183,6 +183,12 @@
 
 .doc .admonitionblock pre {
   font-size: 0.85rem;
+  background-color: transparent;
+  box-shadow: none;
+}
+.doc .admonitionblock pre code, .doc .admonitionblock pre:not(.highlight) {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .doc .admonitionblock > table {
