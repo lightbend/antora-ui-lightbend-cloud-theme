@@ -1,20 +1,23 @@
 footer.footer {
-	font-size: 0.85rem;
 	background-color: var(--color-lb-slate);
 	color: #fff;
-	padding: 0.5rem 1rem;
+	padding: 4rem 1rem;
+}
+.footer nav ul + ul {
+	border-top: 1px solid var(--color-lb-slate-ltr);
+	padding-top: 1.5rem
 }
 .footer nav h3 {
+	margin-top: 0;
 	margin-bottom: 1rem;
 	color: var(--color-lb-orange);
-	font-size: 1.75rem;
+	font-size: 28px;
 	font-weight: 700;
 	border-bottom: 1px solid var(--color-lb-slate-ltr);
 }
 .footer nav h3 a {
 	color: var(--color-lb-orange);
 	font-size: 0.875rem;
-	font-weight: 700;
 	text-transform: uppercase;
 	background: var(--color-lb-slate-dkr);
 	margin-bottom: 2px;
@@ -24,7 +27,7 @@ footer.footer {
 .footer nav h4 {
 	margin-bottom: .25rem;
 	color: var(--color-lb-orange-dkr);
-	font-size: 1rem;
+	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -33,6 +36,7 @@ footer.footer {
 }
 .footer nav h4 a:hover {
 	color: var(--color-lb-orange);
+	text-decoration: none;
 }
 .footer nav ul {
 	padding: 0;
@@ -58,7 +62,7 @@ footer.footer {
 }
 .footer nav ul li a:hover {
 	text-decoration: none;
-	color: var(--col-lb-orange);
+	color: var(--color-lb-orange);
 }
 .footer nav ul li a:hover .svg-icon path {
 	fill: var(--color-lb-orange);
@@ -102,14 +106,28 @@ footer.footer {
 	padding-left: 10px;
 	padding-right: 6px;
 }
-
 @media screen and (min-width: 800px) {
 	.footer nav {
-		display: flex
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
 	}
 	.footer nav section {
-		max-width: 500px;
-		padding-right: 2rem
+		padding-right: 1rem;
+		flex-basis: 50%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.footer nav {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1370px;
+		padding-left: 17rem;
+	}
+	.footer nav section {
+		padding-right: 2rem;
+		flex-basis: 33%;
 	}
 	.footer nav h3 a {
 		background: none;
@@ -121,7 +139,7 @@ footer.footer {
 		background: none;
 		margin-bottom: 0;
 		padding: 0;
-		font-size: 0.938rem;
+		font-size: 15px;
 	}
 	.footer nav ul li a.btn {
 		padding: .5rem;
@@ -131,6 +149,7 @@ footer.footer {
 		min-width: 65%;
 		display: inline-block;
 		width: 100%;
+		margin-bottom: 5px;
 	}
 	.footer nav ul li a.inset {
 		padding-left: 1rem;
