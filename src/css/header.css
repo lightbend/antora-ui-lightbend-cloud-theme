@@ -168,8 +168,12 @@ body {
   padding-right: 1.5rem;
   font-size: .75rem;
 }
-.navbar-dropdown .navbar-item strong {
+.navbar-dropdown .navbar-item:first-child strong {
   font-weight: 700;
+  font-size: 1rem;
+  margin-top: -7px;
+  color: var(--color-lb-orange);
+  text-transform: uppercase;
 }
 
 .navbar-divider {
