@@ -20,7 +20,7 @@ $(function() {
   if(cookieTg != "")
     currentGroups = JSON.parse(cookieTg);
 
-  console.log("cookieTg "+cookieTg);
+  //console.log("cookieTg "+cookieTg);
 
   // http://www.w3schools.com/js/js_cookies.asp
   function setCookie(cname,cvalue,exdays) {
@@ -75,11 +75,11 @@ $(function() {
 
 
   $(".supergroup").each(function() {
-    console.log("start-----------------------------------------------");
+    //console.log("start-----------------------------------------------");
     var supergroup = $(this).attr('name').toLowerCase();
     var groups = $(this).find(".group");
 
-    console.log("found supergroup : "+supergroup);
+    //console.log("found supergroup : "+supergroup);
 
 
     var current = currentGroups[supergroup];
@@ -100,7 +100,7 @@ $(function() {
     $(this).on("change", function() {
       switchToGroup(supergroup, this.value);
     });
-    console.log("end-----------------------------------------------");
+    //console.log("end-----------------------------------------------");
   });
 
 

@@ -1,0 +1,77 @@
+<script src="{{uiRootPath}}/js/vendor/jquery.waypoints.min.js"></script>
+<script src="{{uiRootPath}}/js/vendor/inview.min.js"></script>
+
+<script>
+(function($) {
+	$(function() {
+		
+		var pageViewedTriggerElement = '#page-content';
+		//override #page-content if a custom trigger is present in page
+		if($("#page-viewed-trigger").length){
+			pageViewedTriggerElement = '#page-viewed-trigger';
+		}
+
+		var inview = new Waypoint.Inview({
+			element: $(pageViewedTriggerElement)[0],
+				entered: function(direction) {
+				//fire custom Jquery event that Marketo can listen for
+				$.event.trigger({
+					type: "pageContentViewed"
+				});
+			}
+		})
+
+	});
+})(jQuery);
+</script>
+
+
+<!-- Google Tag Manager -->
+<script type="text/plain" class="optanon-category-2">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MC4WH2S');</script>
+<!-- End Google Tag Manager -->
+
+<!--Marketo-->
+<script>
+    (function() {
+      var didInit = false;
+      function initMunchkin() {
+        if(didInit === false) {
+          didInit = true;
+          Munchkin.init('558-NCX-702', { 'asyncOnly': true, 'disableClickDelay': true });
+        }
+      }
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = '//munchkin.marketo.net/munchkin.js';
+      s.onreadystatechange = function() {
+        if (this.readyState == 'complete' || this.readyState == 'loaded') {
+          initMunchkin();
+        }
+      };
+      s.onload = initMunchkin;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+
+
+    (function($) {
+      $(function() {
+        var pageViewed = false;
+        $(document).on("pageContentViewed", handlePageContentViewed);
+        function handlePageContentViewed(e) {
+          var viewedPagePath = "viewed"+window.location.pathname;
+          if(!pageViewed){
+            Munchkin.munchkinFunction('visitWebPage', {
+              'url': viewedPagePath
+              }
+            );
+            pageViewed = true;
+          }
+        };
+      });
+    })(jQuery);
+
+</script>
