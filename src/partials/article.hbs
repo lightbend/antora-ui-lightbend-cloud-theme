@@ -65,6 +65,16 @@
 				</span>
 			{{/if}}
 
+			{{#if page.attributes.supergroup-mac-ubuntu}}
+				<span>
+					<label>{{page.attributes.supergroup-mac-ubuntu}}</label>
+					<select class="supergroup" name="supergroup-mac-ubuntu">
+						<option class="group" value="group-mac">Mac</option>
+						<option class="group" value="group-ubuntu">Ubuntu</option>
+					</select>
+				</span>
+			{{/if}}
+
 		</fieldset>
 		
 		{{{page.contents}}}

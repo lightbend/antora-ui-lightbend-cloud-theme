@@ -11,6 +11,7 @@ Author Name
 :page-supergroup-sbt-maven-gradle: Build Tool
 :page-supergroup-minishift-minikube: Platform
 :page-supergroup-kubernetes-openshift: Platform
+:page-supergroup-mac-ubuntu: OS
 
 
 == Cu solet
