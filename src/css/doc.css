@@ -512,8 +512,9 @@
 }
 
 .doc .colist > table tr > td:first-of-type {
-  padding: 0 0.75em;
+  padding: 0.5em 0.75em;
   line-height: 1;
+  vertical-align: top;
 }
 
 b.button {
@@ -611,6 +612,10 @@ kbd,
   margin: 0 0 2rem 0;
   padding: 1rem;
   background: var(--color-lb-off-white);
+}
+
+.doc dl.tabbed dd .listingblock:first-child {
+  margin-top: 0;
 }
 .doc dl.tabbed dd pre code {
   background-color: transparent;
