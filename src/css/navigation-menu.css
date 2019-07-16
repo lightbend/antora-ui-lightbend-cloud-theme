@@ -40,7 +40,7 @@ html.is-clipped--nav {
 
 .nav-menu h3.title {
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
   color: #424242;
   font-size: 1em;
   padding: 0.25em 0 0.125em;
@@ -102,5 +102,5 @@ html.is-clipped--nav {
 
 .is-current-page > .nav-link,
 .is-current-page > .nav-text {
-  font-weight: 500;
+  font-weight: 700;
 }
