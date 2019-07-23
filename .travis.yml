@@ -2,10 +2,11 @@ language: node_js
 node_js: "lts/*"
 
 before_script:
-  - npm install -g gulp-cli
+  - npm install -g gulp-cli link-checker
 
 script:
-  - gulp bundle:pack
+  - gulp preview:build bundle:pack
+  - link-checker public
 
 cache:
   yarn: true
