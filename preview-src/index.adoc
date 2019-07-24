@@ -585,7 +585,7 @@ TIP: Image version number
 
 The deployment spec above uses an image version tag of `latest`. The `latest` tag does not automatically refer to the latest deployed version of an image, it simply is the default tag that is used when no tag is specified. We could have just used `shopping-cart`, and this would mean the same thing as `shopping-cart:latest`. For development, this is convenient.
 
-For production, the use of the `latest` tag is considered bad practice. We recommend using actual version number, one that gets updated each time you deploy. In the xref:building-shopping-cart.adoc[Building Shopping Cart] section of this guide we will describe how to configure your build to base its version number off the current `git` commit hash. This is especially convenient for continuous deployment scenarios, since a human doesn't need to be involved in selecting a unique version number. After building the image, you can take the version number generated in that step and update the image referenced in the spec accordingly.
+For production, the use of the `latest` tag is considered bad practice. We recommend using actual version number, one that gets updated each time you deploy. In the Building Shopping Cart section of this guide we will describe how to configure your build to base its version number off the current `git` commit hash. This is especially convenient for continuous deployment scenarios, since a human doesn't need to be involved in selecting a unique version number. After building the image, you can take the version number generated in that step and update the image referenced in the spec accordingly.
 ****
 
 == Add Play application secret
@@ -618,7 +618,7 @@ play {
 
 == View the configuration to connect to PostgreSQL
 
-In xref:setting-up-postgresql.adoc[Setting up PostgreSQL] we described the requirements the sample app and this guide have for a PostgreSQL service, including the requirement for the service to be called `postgresql`, and for there to be a secret called `postgres-shopping-cart`. Now we need to check that Shopping Cart is configure to connect to that service and consume the secret.
+In Setting up PostgreSQL we described the requirements the sample app and this guide have for a PostgreSQL service, including the requirement for the service to be called `postgresql`, and for there to be a secret called `postgres-shopping-cart`. Now we need to check that Shopping Cart is configure to connect to that service and consume the secret.
 
 .. In `prod-application.conf`, find the following configuration:
 +
@@ -655,7 +655,7 @@ NOTE: If you used a different name for the PostgreSQL database deployment, or fo
 
 == View the configuration to connect to Kafka
 
-In xref:setting-up-kafka.adoc[Setting up Kafka], we described the requirements for a Kafka instance. Lagom will automatically read an environment variable called `KAFKA_SERVICE_NAME` if present, so there's nothing to add in the Shopping Cart configuration file.
+In Setting up Kafka, we described the requirements for a Kafka instance. Lagom will automatically read an environment variable called `KAFKA_SERVICE_NAME` if present, so there's nothing to add in the Shopping Cart configuration file.
 
 We just need `shopping-cart.yaml` to pass the environment variable, pointing to the Kafka service we provisioned. The actual service name that we need to configure needs to match the SRV lookup for the Kafka broker. Our Kafka broker defines a TCP port called `clients`. To lookup the IP address or host name and port number, we need to use a service name of `_clients._tcp.strimzi-kafka-brokers`.
 
@@ -721,5 +721,5 @@ override def load(context: LagomApplicationContext): LagomApplication =
 
 == What's next
 
-With the microservice configuration and the deployment spec ready, we need to add the Shopping Cart configuration necessary for xref:configuring-akka-cluster.adoc[Forming an Akka Cluster].
+With the microservice configuration and the deployment spec ready, we need to add the Shopping Cart configuration necessary for Forming an Akka Cluster.
 
