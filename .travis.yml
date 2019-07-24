@@ -1,0 +1,14 @@
+language: node_js
+node_js: "lts/*"
+
+before_script:
+  - npm install -g gulp-cli link-checker
+
+script:
+  - gulp preview:build bundle:pack
+  - link-checker public --http-redirects=1 --url-ignore='/6.0/index.html' --url-ignore='^#$'
+
+cache:
+  yarn: true
+  directories:
+    - $HOME/.cache
