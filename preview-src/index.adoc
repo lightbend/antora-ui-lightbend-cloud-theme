@@ -133,9 +133,170 @@ This is the java of the second tab.
 ----
 --
 
+== Table Examples
+
+
+|===
+|Title | Description
+
+| Introducing Lightbend Platform
+| Describes the benefits of using Lightbend Platform and the business use cases that it supports. Read xref:streaming-architecture.adoc[From batch to streaming - the power of Lightbend Pipelines] to get an overview of why streaming has become critical for processing data and how Lightbend Pipelines enables rapid development and deployment. xref:traditional-architecture.adoc[Limitations of traditional architectures] shows how reactive microservices can help you successfully meet the challenges of digital transformation and taking advantage of cloud computing.
+
+| Before you start: design and planning
+| For those new to Reactive microservices, streaming, or Kubernetes-based platforms, this section contains fundamental information to help you get the most out of your efforts. Read xref:microservices-project.adoc[Planning a microservices project] to start with the Lightbend Platform tool that best fits your team and requirements. xref:streaming-and-analysis.adoc[Planning for streaming data and analysis] lists some important factors to keep in mind when working with streaming data. xref:planning-a-cluster.adoc[Deployment platform recommendations] provides an overview of Kubernetes-based platforms and provides tips and guidelines that will help when setting up environments for development and testing or for production.
+
+| Getting started
+| Describes how to obtain a Lightbend Platform subscription and explains support terminology. xref:preparing-dev-env.adoc[Preparing a development environment] shows you how to add the appropriate credentials to your build structure and how to set up a local Kubernetes cluster for testing. xref:setting-up-production-env.adoc[Setting up a production environment] provides helpful links and tips for setting up a multi-cluster Kubernetes-based production environment. xref:lightbend-platform.adoc[Lightbend Platform specifics] 
+
+|=== 
 
 
 
+[cols=2*,options="header"]
+|===
+|Name of Column 1
+|Name of Column 2
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|===
+
+
+|=== 
+
+| Cell in column 1, row 1 | Cell in column 2, row 1  
+
+| Cell in column 1, row 2 | Cell in column 2, row 2
+
+| Cell in column 1, row 3 | Cell in column 2, row 3
+
+|=== 
+
+
+|===
+|Name of Column 1 |Name of Column 2
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|===
+
+
+[frame=topbot]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+
+[frame=sides]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+[grid=rows]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+[grid=cols]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+[grid=none]
+|===
+|Name of Column 1 |Name of Column 2 |Name of Column 3
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+[caption="Table A. "]
+.A formal table
+|===
+|Name of Column 1 |Name of Column 2
+
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|===
+
+
+
+[cols="3*"] 
+|===
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+|Cell in column 3, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|===
+
+
+
+|===
+|Source Code 1 |Source Code 2
+
+a|
+[source,python]
+----
+import os
+print "%s" %(os.uname())
+----
+
+a|
+[source,python]
+----
+import os
+print ("%s" %(os.uname()))
+----
+|===
 
 
 [.scala] 

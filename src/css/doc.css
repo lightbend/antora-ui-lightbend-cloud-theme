@@ -128,16 +128,25 @@
 
 .doc table.tableblock th,
 .doc table.tableblock td {
-  padding: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-lb-off-white-dkr);
+}
+.doc table.tableblock th {
+  border-left: 1px solid rgba(255,255,255,.3);
+  border: 1px solid rgba(255,255,255,.3);
 }
 
 .doc table.tableblock th {
   border-bottom: 2.5px solid #ddd;
+  font-weight: 700;
 }
 
-.doc table.tableblock td {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+thead tr {
+  background: var(--color-lb-slate);
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background: var(--color-lb-off-white);
 }
 
 .doc .halign-left {
