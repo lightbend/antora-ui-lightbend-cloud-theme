@@ -6,7 +6,7 @@ before_script:
 
 script:
   - gulp preview:build bundle:pack
-  - link-checker public --http-redirects=1 --url-ignore='/6.0/index.html' --url-ignore='^#$'
+  - link-checker public --http-redirects=1 --external-only
 
 cache:
   yarn: true
