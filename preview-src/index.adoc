@@ -35,6 +35,9 @@ public class Minikube {
 This is some text about the [.group-java]#java# [.group-scala]#scala# thing below this:
 
 
+image::https://d3gnpvjw8j16uq.cloudfront.net/assets/images/svg/diagrams/lightbend-platform-overview.svg[Lightbend Platform Overview]
+
+
 [.tabset] 
 Play::
 + 
