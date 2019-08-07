@@ -31,13 +31,29 @@ public class Minikube {
 }
 ----
 
-=== Liber recusabo
-This is some text about the [.group-java]#java# [.group-scala]#scala# thing below this:
+== Formatted Text
+See: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#formatted-text[window=_blank]
+
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
 
 
+== Images
 image::https://d3gnpvjw8j16uq.cloudfront.net/assets/images/svg/diagrams/lightbend-platform-overview.svg[Lightbend Platform Overview]
 
 
+== Tabsets
 [.tabset] 
 Play::
 + 
