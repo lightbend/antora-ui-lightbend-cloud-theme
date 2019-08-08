@@ -42,6 +42,13 @@
   menu.appendChild(title)
   menu.appendChild(list)
 
+  //should it stick
+  var intViewportHeight = window.innerHeight
+  var menuHeight = menu.offsetHeight
+  if(menuHeight < intViewportHeight){
+    menu.classList.add("stick")
+  }
+
   if (sidebar) {
     window.addEventListener('load', function () {
       onScroll()

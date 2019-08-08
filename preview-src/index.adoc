@@ -14,25 +14,26 @@ Author Name
 :page-supergroup-mac-ubuntu: OS
 
 
-== Cu solet
 
-[.tabset] 
-Scala::
-This is the scala of the first tab.
-Java::
-+
-[source,java]
-----
-public class Minikube {
-  private String name;
-  public Person(String name) {
-    this.name = name;
-  }
-}
-----
 
 == Formatted Text
 See: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#formatted-text[window=_blank]
+
+----
+bold *constrained* & **un**constrained
+
+italic _constrained_ & __un__constrained
+
+bold italic *_constrained_* & **__un__**constrained
+
+monospace `constrained` & ``un``constrained
+
+monospace bold `*constrained*` & ``**un**``constrained
+
+monospace italic `_constrained_` & ``__un__``constrained
+
+monospace bold italic `*_constrained_*` & ``**__un__**``constrained
+----
 
 bold *constrained* & **un**constrained
 
@@ -50,10 +51,153 @@ monospace bold italic `*_constrained_*` & ``**__un__**``constrained
 
 
 == Images
+
+----
+image::https://d3gnpvjw8j16uq.cloudfront.net/assets/images/svg/diagrams/lightbend-platform-overview.svg[Lightbend Platform Overview]
+----
+
 image::https://d3gnpvjw8j16uq.cloudfront.net/assets/images/svg/diagrams/lightbend-platform-overview.svg[Lightbend Platform Overview]
 
 
+== Block Image Groups
+
+=== Basic example
+Images are vertically centered by default. Images will proportionately take up horizontal space based on their natural widths. On small screens the images will resort back to stacking in a column down the page.
+
+----
+[.image-group]
+--
+image::https://via.placeholder.com/600x150[]
+image::https://via.placeholder.com/300x500[]
+image::https://via.placeholder.com/500x300[]
+--
+----
+
+[.image-group]
+--
+image::https://via.placeholder.com/600x150?text=Example+Image[]
+image::https://via.placeholder.com/300x500?text=Example+Image[]
+image::https://via.placeholder.com/500x300?text=Example+Image[]
+--
+
+{empty} +
+
+=== Vertically align to top
+
+  
+----
+[.image-group.top]
+--
+image::https://via.placeholder.com/300x300[]
+image::https://via.placeholder.com/300x600[]
+image::https://via.placeholder.com/300x400[]
+image::https://via.placeholder.com/300x600[]
+image::https://via.placeholder.com/300x300[]
+image::https://via.placeholder.com/300x200[]
+--
+----
+
+[.image-group.top]
+--
+image::https://via.placeholder.com/300x300?text=Example+Image[]
+image::https://via.placeholder.com/300x600?text=Example+Image[]
+image::https://via.placeholder.com/300x400?text=Example+Image[]
+image::https://via.placeholder.com/300x600?text=Example+Image[]
+image::https://via.placeholder.com/300x300?text=Example+Image[]
+image::https://via.placeholder.com/300x200?text=Example+Image[]
+--
+
+{empty} +
+
+=== Vertically align to bottom
+
+----
+[.image-group.bottom]
+--
+image::https://via.placeholder.com/600x150[]
+image::https://via.placeholder.com/300x500[]
+image::https://via.placeholder.com/500x300[]
+--
+----
+
+[.image-group.bottom]
+--
+image::https://via.placeholder.com/600x150?text=Example+Image[]
+image::https://via.placeholder.com/300x500?text=Example+Image[]
+image::https://via.placeholder.com/500x300?text=Example+Image[]
+--
+
+{empty} +
+
+=== Custom Widths
+
+----
+[.image-group]
+--
+[.width-25]
+image::https://via.placeholder.com/600x300[]
+[.width-50]
+image::https://via.placeholder.com/600x300[]
+[.width-25]
+image::https://via.placeholder.com/600x300[]
+--
+----
+
+[.image-group]
+--
+[.width-25]
+image::https://via.placeholder.com/600x300?text=25%+Width[]
+[.width-50]
+image::https://via.placeholder.com/600x300?text=50%+Width[]
+[.width-25]
+image::https://via.placeholder.com/600x300?text=25%+Width[]
+--
+
+{empty} +
+
+You can use the following widths
+----
+[.width-5] 
+[.width-10] 
+[.width-15] 
+[.width-20] 
+[.width-25] 
+[.width-30] 
+[.width-35] 
+[.width-40] 
+[.width-45] 
+[.width-50] 
+[.width-55] 
+[.width-60] 
+[.width-65] 
+[.width-70] 
+[.width-75] 
+[.width-80] 
+[.width-85] 
+[.width-90] 
+[.width-95] 
+[.width-100]
+----
+
+
 == Tabsets
+
+[.tabset] 
+Scala::
+This is the scala of the first tab.
+Java::
++
+[source,java]
+----
+public class Minikube {
+  private String name;
+  public Person(String name) {
+    this.name = name;
+  }
+}
+----
+
+
 [.tabset] 
 Play::
 + 
@@ -538,50 +682,6 @@ If you installed the CLI and the default site generator globally, you can upgrad
  $ npm i -g @antora/cli @antora/site-generator-default
 ====
 
-Nominavi luptatum eos, an vim hinc philosophia intellegebat.
-Eu mea inani iriure.
-
-[discrete]
-== Voluptua singulis
-
-Cum dicat putant ne.
-Est in reque homero principes, meis deleniti mediocrem ad has.
-Altera atomorum his ex, has cu elitr melius propriae.
-Eos suscipit scaevola at.
-
-
-== Cavern Glow
-
-The river rages through the cavern, rattling its content...
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-If you installed the CLI and the default site generator globally, you can upgrade both of them with the same command.
-
-
-Crawling through the twisted understory...
-
-== The Ravages of Writing
-
-Her finger socks had been vaporized by crystalline nuggets of...
-
-
-
-Two fresh Burdockian leaves, harvested by the light of the teal moons...
-
-
-
-Crawling through the twisted understory...
 
 
 Crawling through the twisted understory...
