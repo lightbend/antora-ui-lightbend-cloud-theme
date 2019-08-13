@@ -13,12 +13,16 @@
 		max-width: 340px;
 	}
 	.toc-menu {
-		position: sticky;
-		top: 150px;
 		display: inline-block;
 		padding: 0 1rem;
 		border: 0px solid grey;
 		max-width: 600px;
+		margin-top: 20px;
+	}
+	.toc-menu.stick {
+		position: sticky;
+		top: 150px;
+		margin-top: 0;
 	}
 	#toc {
 		display: none;

@@ -293,6 +293,58 @@ tbody tr:nth-child(odd) {
   max-width: 100%;
 }
 
+@media screen and (min-width: 500px) {
+
+  .doc .image-group .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .doc .image-group.top .content {
+    align-items: flex-start;
+  }
+
+  .doc .image-group.bottom .content {
+    align-items: flex-end;
+  }
+
+  .doc .image-group .content .imageblock {
+    padding: 0 .5rem;
+  }
+  .doc .image-group .content .imageblock:first-child {
+    padding-left: 0;
+  }
+  .doc .image-group .content .imageblock:last-child {
+    padding-right: 0;
+  }
+
+  .doc .image-group .content .imageblock.width-5 {width: 5%;}
+  .doc .image-group .content .imageblock.width-10 {width: 10%;}
+  .doc .image-group .content .imageblock.width-15 {width: 15%;}
+  .doc .image-group .content .imageblock.width-20 {width: 20%;}
+  .doc .image-group .content .imageblock.width-25 {width: 25%;}
+  .doc .image-group .content .imageblock.width-30 {width: 30%;}
+  .doc .image-group .content .imageblock.width-35 {width: 35%;}
+  .doc .image-group .content .imageblock.width-40 {width: 40%;}
+  .doc .image-group .content .imageblock.width-45 {width: 45%;}
+  .doc .image-group .content .imageblock.width-50 {width: 50%;}
+  .doc .image-group .content .imageblock.width-55 {width: 55%;}
+  .doc .image-group .content .imageblock.width-60 {width: 60%;}
+  .doc .image-group .content .imageblock.width-65 {width: 65%;}
+  .doc .image-group .content .imageblock.width-70 {width: 70%;}
+  .doc .image-group .content .imageblock.width-75 {width: 75%;}
+  .doc .image-group .content .imageblock.width-80 {width: 80%;}
+  .doc .image-group .content .imageblock.width-85 {width: 85%;}
+  .doc .image-group .content .imageblock.width-90 {width: 90%;}
+  .doc .image-group .content .imageblock.width-95 {width: 95%;}
+  .doc .image-group .content .imageblock.width-100 {width: 100%;}
+
+}
+
+
+
+
 .doc > h1 {
   font-size: 2rem;
   margin: 2rem 0 1.5rem;
