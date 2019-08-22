@@ -70,7 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         $(document).on("pageContentViewed", handlePageContentViewed);
         
         function handlePageContentViewed(e) {
-          var viewedPagePath = window.location.pathname+"-viewed";
+          var viewedPagePath = "/viewed"+window.location.pathname;
           if(!pageViewed && munchkinLive){
             Munchkin.munchkinFunction('visitWebPage', {
               'url': viewedPagePath
