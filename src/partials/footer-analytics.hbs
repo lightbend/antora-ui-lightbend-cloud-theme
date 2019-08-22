@@ -35,12 +35,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!--Marketo-->
 <script>
+
+    //store munchkin status to use in other functions
+    var munchkinLive = false;
+
+    //marketo munchkin
     (function() {
       var didInit = false;
       function initMunchkin() {
         if(didInit === false) {
           didInit = true;
           Munchkin.init('558-NCX-702', { 'asyncOnly': true, 'disableClickDelay': true });
+          munchkinLive = true;
         }
       }
       var s = document.createElement('script');
@@ -56,13 +62,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     })();
 
 
+    //wait for jquery as we use a custom jquery event, triggered by waypoint.
     (function($) {
       $(function() {
         var pageViewed = false;
+        
         $(document).on("pageContentViewed", handlePageContentViewed);
+        
         function handlePageContentViewed(e) {
-          var viewedPagePath = "viewed"+window.location.pathname;
-          if(!pageViewed){
+          var viewedPagePath = window.location.pathname+"-viewed";
+          if(!pageViewed && munchkinLive){
             Munchkin.munchkinFunction('visitWebPage', {
               'url': viewedPagePath
               }
@@ -70,6 +79,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             pageViewed = true;
           }
         };
+
+
       });
     })(jQuery);
 
