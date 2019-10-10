@@ -5,12 +5,12 @@
   	position: relative;
   	padding: 0;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1280px) {
 	.toc {
 		flex-grow: 1;
 		flex-basis: 0;
 		border: 0px solid red;
-		max-width: 340px;
+		max-width: 380px;
 	}
 	.toc-menu {
 		display: inline-block;
