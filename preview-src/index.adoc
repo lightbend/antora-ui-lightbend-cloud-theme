@@ -14,7 +14,11 @@ Author Name
 :page-supergroup-mac-ubuntu: OS
 
 
+== Configure the service locator
 
+Lagom uses a service locator to look up other microservices. The service locator takes the service name defined in a Lagom service descriptor and translates it into an address to use for communication. In development, when you are running with the `runAll` command, Lagom starts up its own development service locator, and injects that into each microservice. You don't have to worry about service lookup until production. Once out of the development environment, you need to provide a service locator yourself.
+
+Akka provides an API called https://doc.akka.io/docs/akka/current/discovery/index.html[Akka Discovery] that includes a number of backends. Several are compatible with a Kubernetes environment. We're going to use a service locator implementation built on Akka Discovery, and then we're going to use the DNS implementation of Akka discovery to discover other services.
 
 == Formatted Text
 See: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#formatted-text[window=_blank]

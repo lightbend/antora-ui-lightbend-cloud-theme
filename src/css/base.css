@@ -32,13 +32,13 @@ body {
 html {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.125em;
   text-size-adjust: 100%;
 }
 
 @media screen and (min-width: 1024px) {
   html {
-    font-size: 1.2em;
+    font-size: 1.125em;
   }
 }
 

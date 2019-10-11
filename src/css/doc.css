@@ -11,9 +11,10 @@
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1280px) {
   .doc {
-    max-width: 54rem;
+    min-width: 41rem;
+    max-width: 50rem;
     flex-grow: 1;
     flex-basis: 0;
   }
@@ -46,7 +47,7 @@
   width: 1.75ex;
   margin-left: -1.5ex;
   visibility: hidden;
-  font-size: 0.8em;
+  font-size: 0.814em;
   font-weight: normal;
   padding-top: 0.05em;
 }
@@ -85,7 +86,7 @@
 
 /* what about td/th code? */
 .doc p code {
-  font-size: 0.9em;
+  font-size: 0.814em;
   background-color: var(--color-lb-off-white);
   padding: 0.075rem 0.25rem 0.125rem;
   border-radius: 0.2rem;
@@ -94,7 +95,7 @@
 
 .doc pre {
   /* color: #000; */
-  font-size: 0.9rem;
+  font-size: 0.814em;
   line-height: 1.5;
   margin: 0;
 }
@@ -115,7 +116,7 @@
 
 .doc table.tableblock {
   border-collapse: collapse;
-  font-size: 0.8em;
+  font-size: 0.814em;
   margin: 2rem 0;
   /* enable table-layout: fixed if you want the table width to be enforced strictly */
   /* alternative is to wrap table in div and set overflow-x: auto on the wrapper */
@@ -183,7 +184,7 @@ tbody tr:nth-child(odd) {
 
 .doc .admonitionblock p,
 .doc .admonitionblock td.content {
-  font-size: 0.9rem;
+  font-size: 0.814em;
 }
 
 .doc .admonitionblock td.content > :first-child {
@@ -191,7 +192,7 @@ tbody tr:nth-child(odd) {
 }
 
 .doc .admonitionblock pre {
-  font-size: 0.85rem;
+  font-size: 0.814em;
   background-color: transparent;
   box-shadow: none;
 }
@@ -363,7 +364,7 @@ tbody tr:nth-child(odd) {
 }
 
 .doc p {
-  font-size: 0.95rem;
+  font-size: 0.875em;
   margin: 0;
 }
 
@@ -385,7 +386,7 @@ tbody tr:nth-child(odd) {
   background-color: var(--color-lb-off-white);
   border-left: 5px solid var(--color-lb-orange);
   color: #4a4a4a;
-  font-size: 0.9em;
+  font-size: 0.875em;
   margin: 0;
   padding: 0.75em 1em;
 }
@@ -457,10 +458,10 @@ tbody tr:nth-child(odd) {
 .doc .openblock .title {
   /* color: #4a4a4a; */
   color: #191919;
-  font-size: 0.925rem;
+  font-size: 0.938em;
   font-style: italic;
   letter-spacing: -0.005em;
-  padding-bottom: 0.075rem;
+  padding-bottom: 0.075em;
 }
 
 .doc .admonitionblock .title + .paragraph {
@@ -569,7 +570,7 @@ tbody tr:nth-child(odd) {
 }
 
 .doc .colist {
-  font-size: 0.95rem;
+  font-size: 0.875em;
 }
 
 .doc .colist > table tr > td:first-of-type {
@@ -594,7 +595,7 @@ b.button::after {
 
 kbd {
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.689rem;
   background-color: var(--color-lb-off-white);
   border: 1px solid #c1c1c1;
   border-radius: 0.25em;
@@ -611,7 +612,7 @@ kbd,
 
 .keyseq {
   font-family: 'Source Code Pro', monospace;
-  font-size: 0.9em;
+  font-size: 0.875em;
 }
 
 .keyseq kbd {
@@ -667,7 +668,7 @@ kbd,
   position: absolute;
   width: 100%;
   left: 0;
-  top: 38px;
+  top: 37px;
   border-radius: 0 3px 3px 3px;
   border: 1px solid var(--color-lb-off-white-dkr);
   margin: 0 0 2rem 0;
