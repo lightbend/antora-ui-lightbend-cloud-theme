@@ -1,0 +1,7 @@
+.home {
+	background: var(--color-cloudflow-dark-blue);
+}
+.homepage-logo {
+	max-height: 60px;
+	margin: 0 auto;
+}

@@ -1,8 +1,13 @@
 :root {
-  --color-text: #1c3b47;
-  --color-navbar-bg: #3fa9f5;
-  --color-navbar-bg-focus: #3fa9f5;
+  --color-text: #0b5567;
+  --color-navbar-bg: #15a9ce;
+  --color-navbar-bg-focus: #107f9b;
   --color-navbar-text: #ffffff;
+
+  --color-cloudflow-blue: #15a9ce;
+  --color-cloudflow-blue-dkr: #107f9b;
+  --color-cloudflow-dark-blue: #0b5567;
+
   --color-lb-orange: #3fa9f5;
   --color-lb-orange-dkr: #1070b2;
   --color-lb-orange-ltr: #61b7f5;
