@@ -1,7 +1,25 @@
 .home {
-	background: var(--color-cloudflow-dark-blue);
+	background: var(--color-cloudflow-blue);
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 .homepage-logo {
 	max-height: 60px;
 	margin: 0 auto;
+}
+.home p {
+	max-width: 600px;
+}
+.home .btn {
+	border: 2px solid var(--color-lb-off-white-dkr);
+	border-top: 2px solid var(--color-cloudflow-blue);
+	padding: 1rem 2rem;
+	display: inline-block;
+	color: var(--color-cloudflow-blue);
+	font-weight: 700;
+	text-decoration: none;
+
 }

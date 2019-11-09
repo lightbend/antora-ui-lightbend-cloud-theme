@@ -1,7 +1,7 @@
 footer.footer {
 	background-color: var(--color-cloudflow-dark-blue);
 	color: #fff;
-	padding: 4rem 1rem;
+	padding: 1rem;
 }
 .footer nav ul + ul {
 	border-top: 1px solid var(--color-lb-slate-ltr);
@@ -9,9 +9,9 @@ footer.footer {
 }
 .footer nav h3 {
 	margin-top: 0;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
 	color: var(--color-cloudflow-blue);
-	font-size: 14px;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: 700;
 	border-bottom: 0px solid var(--color-cloudflow-blue-dkr);
@@ -60,13 +60,14 @@ footer.footer {
 	display: block;
 	line-height: 1.5rem;
 	color: var(--color-lb-off-white);
-	background: var(--color-lb-slate-dkr);
+	background: rgba(0,0,0,.2);
 	margin-bottom: 2px;
 	padding: 1rem;
 }
 .footer nav ul li a:hover {
 	text-decoration: none;
-	color: var(--color-lb-orange);
+	color: var(--color-cloudflow-blue);
+	background: rgba(0,0,0,.4);
 }
 .footer nav ul li a:hover .svg-icon path {
 	fill: var(--color-cloudflow-blue);
@@ -175,6 +176,9 @@ footer.footer {
 }
 
 @media screen and (min-width: 1024px) {
+	footer.footer {
+		padding: 5rem 1rem 4rem 1rem;
+	}
 	.footer nav, .legal-social {
 		display: flex;
 		flex-wrap: wrap;
