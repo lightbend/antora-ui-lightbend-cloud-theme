@@ -1,4 +1,4 @@
-= Cloudflow Home Page
+= Cloudflow Static Page
 Author Name
 :idprefix:
 :idseparator: -

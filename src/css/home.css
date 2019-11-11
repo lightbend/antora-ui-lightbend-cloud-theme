@@ -1,25 +1,32 @@
-.home {
-	background: var(--color-cloudflow-blue);
-	background: white;
+.home-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	text-align: center;
+	padding: 2rem 0 6rem 0
 }
 .homepage-logo {
-	max-height: 60px;
-	margin: 0 auto;
+	max-height: 100px;
+	margin: 0 auto 3rem 0;
 }
-.home p {
-	max-width: 600px;
+.home-content p {
+	max-width: 800px;
 }
-.home .btn {
-	border: 2px solid var(--color-lb-off-white-dkr);
-	border-top: 2px solid var(--color-cloudflow-blue);
-	padding: 1rem 2rem;
-	display: inline-block;
-	color: var(--color-cloudflow-blue);
-	font-weight: 700;
-	text-decoration: none;
+.home footer .legal-social {
+	padding: 0;
+	max-width: none;
+}
+.home footer .legal-social section {
+	border-top: 0px solid rgba(255,255,255,.2);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	text-align: center;
+}
 
+.home footer .legal-social .footer-logo {
+	float: none;
 }

@@ -2,6 +2,14 @@ footer.footer {
 	background-color: var(--color-cloudflow-dark-blue);
 	color: #fff;
 	padding: 1rem;
+	position: relative;
+}
+footer.footer .cloudflow-icon {
+	width: 120px;
+	display: inline-block;
+	position: absolute;
+	top: -42px;
+	left: calc(50% - 60px);
 }
 .footer nav ul + ul {
 	border-top: 1px solid var(--color-lb-slate-ltr);
@@ -9,16 +17,16 @@ footer.footer {
 }
 .footer nav h3 {
 	margin-top: 0;
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.375rem;
 	color: var(--color-cloudflow-blue);
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 700;
-	border-bottom: 0px solid var(--color-cloudflow-blue-dkr);
+	border-bottom: 0px solid rgba(255,255,255,.1);
 }
 .footer nav h3 a {
 	color: var(--color-cloudflow-blue);
-	font-size: 0.875rem;
+	font-size: 16px;
 	text-transform: uppercase;
 	background: var(--color-lb-slate-dkr);
 	margin-bottom: 2px;
@@ -119,10 +127,16 @@ footer.footer {
 .legal-social .legal {
 	width: 100%;
 }
-.legal-social .legal p {
-	line-height: 50px;
-	font-size: 14px;
+.legal-social section {
 	border-top: 1px solid rgba(255,255,255,.2);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.legal-social .legal p {
+	line-height: 20px;
+	font-size: 14px;
 	color: rgba(255,255,255,.6);
 }
 .legal-social .legal p a {
@@ -141,7 +155,7 @@ footer.footer {
 .legal-social .footer-logo {
 	display: flex;
 	align-items: center;
-	margin-top: 4px;
+	margin-top: 10px;
 }
 .legal-social .footer-logo a {
 	display: flex;
@@ -154,6 +168,10 @@ footer.footer {
 }
 .legal-social .footer-logo svg {
 	height: 26px;
+	opacity: .9;
+}
+.legal-social .footer-logo a:hover svg {
+	opacity: 1;
 }
 
 
@@ -172,6 +190,9 @@ footer.footer {
 	.footer .legal-social .footer-logo {
 		display: flex;
 		float: right;
+	}
+	.legal-social section {
+		flex-wrap: nowrap;
 	}
 }
 
@@ -200,6 +221,10 @@ footer.footer {
 		margin-bottom: 0;
 		padding: 0;
 		font-size: 15px;
+		display: inline-block;
+	}
+	.footer nav ul li a:hover {
+		background: rgba(0,0,0,0);
 	}
 	.footer nav ul li a.btn {
 		padding: .5rem;

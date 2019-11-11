@@ -52,7 +52,7 @@
 	font-size: .875rem;
 }
 .toc-menu ul li a:hover {
-	color: var(--color-lb-orange);
+	color: var(--color-cloudflow-blue);
 	text-decoration: none;
 }
 .toc-menu ul li a.is-active {

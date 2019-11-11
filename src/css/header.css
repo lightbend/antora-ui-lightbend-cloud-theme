@@ -353,3 +353,6 @@ body {
 a.site-id:hover {
   color: white;
 }
+body.static .site-id, body.cookie .site-id {
+  display: none;
+}
