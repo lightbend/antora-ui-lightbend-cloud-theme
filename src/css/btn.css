@@ -1,40 +1,45 @@
 .btn {
-	border: 2px solid var(--color-lb-off-white-dkr);
-	padding: .5rem 1rem;
+	border: 1px solid var(--color-lb-off-white-dkr);
+	padding: .75rem .5rem;
 	display: inline-block;
 	color: var(--color-cloudflow-blue);
 	font-weight: 700;
 	text-decoration: none;
 }
 .btn:hover {
-	text-decoration: none;
+	border: 1px solid var(--color-cloudflow-blue);
+	background: var(--color-lb-off-white);
 }
 
-
-
-
-.panels {
+.btn-panels {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	margin: 2rem 0;
 }
-.panel {
+.btn-panel {
 	border: 1px solid var(--color-lb-off-white-dkr);
-	border-bottom: 3px solid var(--color-cloudflow-blue);
-	padding: 1.5rem 1rem;
-	margin: .5rem;
+	padding: .75rem .5rem;
+	margin: .5rem .75rem;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	color: var(--color-cloudflow-blue);
-	font-weight: 400;
+	font-weight: 700;
 	text-decoration: none;
-	border-radius: 2px;
+	border-radius: 1px;
 	text-align: left;
 	position: relative;
+	background: var(--color-lb-off-white);
 }
-.panel:after{
+
+.btn-panel:hover {
+	text-decoration: none;
+	border: 1px solid var(--color-cloudflow-blue);
+	background: var(--color-lb-off-white);
+}
+.btn-panel:after {
 	content: "\203A";
 	color: var(--color-cloudflow-blue);
 	position: absolute;
@@ -42,28 +47,38 @@
 	right: 1rem;
 	font-size: 26px;
 	line-height: 0;
+	display: none;
 }
-.panel span {
+.btn-panel span {
 	padding: 0 8px;
 }
-.panel img {
-	height: 30px;
+.btn-panel img {
+	height: 25px;
 	margin-right: 5px;
 }
-.panel h3 {
+.btn-panel h3 {
 	margin: 0 0 0 0;
 	display: flex;
 	text-transform: uppercase;
+	align-items: center;
+	font-size: 18px;
 }
-.panel p {
+.btn-panel p {
 	margin: 0;
 	font-size: 14px;
 	color: var(--color-cloudflow-dark-blue);
+	display: none;
 }
 
 @media screen and (min-width: 1024px) {
-	.panels {
+	.btn-panels {
 		flex-direction: row;
-		max-width: 1200px;
+		justify-content: center;
+	}
+	.btn-panel:first-child {
+		margin-left: 0;
+	}
+	.btn-panel:last-child {
+		margin-right: 0;
 	}
 }

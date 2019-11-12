@@ -137,10 +137,10 @@ footer.footer .cloudflow-icon {
 .legal-social .legal p {
 	line-height: 20px;
 	font-size: 14px;
-	color: rgba(255,255,255,.6);
+	color: rgba(255,255,255,.4);
 }
 .legal-social .legal p a {
-	color: rgba(255,255,255,.6);
+	color: rgba(255,255,255,.4);
 }
 .legal-social .legal p a:hover {
 	color: var(--color-cloudflow-blue);
@@ -165,6 +165,7 @@ footer.footer .cloudflow-icon {
 	margin: 0 10px;
 	font-weight: 400;
 	color: rgba(255,255,255,.3);
+	font-size: 16px;
 }
 .legal-social .footer-logo svg {
 	height: 26px;

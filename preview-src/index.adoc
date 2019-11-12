@@ -1,2 +1,2 @@
-= Cloudflow Home Page
+= Cloudflow, quickly develop, orchestrate, and operate distributed streaming applications on Kubernetes
 :page-layout: home

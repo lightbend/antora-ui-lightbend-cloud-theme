@@ -1,2 +1,2 @@
-= Cloudflow Cookie Listing
+= Cookie Listing
 :page-layout: cookie
