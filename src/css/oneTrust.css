@@ -25,3 +25,6 @@ body .optanon-alert-box-wrapper .optanon-alert-box-bottom-padding {
 .optanon-cookie-policy-group-name {
   font-weight: 700;
 }
+.optanon-toggle-display {
+  cursor: pointer;
+}

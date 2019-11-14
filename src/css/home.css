@@ -1,0 +1,59 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.home-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 2rem 1rem 6rem 1rem;
+	max-width: 920px;
+}
+.homepage-logo {
+	max-height: 80px;
+	margin: 0 auto 4rem 0;
+}
+.home-content p {
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+}
+.home-content ul {
+	margin: .5rem 0 2rem 0;
+}
+.home-content li {
+	font-size: 1rem;
+	margin-bottom: .25rem
+}
+.home-content li p {
+	margin-bottom: 0;
+}
+
+.home-content code {
+	font-size: 0.875rem;
+  	background-color: var(--color-lb-off-white-dkr);
+  	padding: 0.075rem 0.25rem 0.125rem;
+  	border-radius: 0.2rem;
+}
+
+.home footer {
+	width: 100%;
+}
+.home footer .legal-social {
+	padding: 0;
+	max-width: none;
+}
+.home footer .legal-social section {
+	border-top: 0px solid rgba(255,255,255,.2);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	text-align: center;
+}
+
+.home footer .legal-social .footer-logo {
+	float: none;
+}
