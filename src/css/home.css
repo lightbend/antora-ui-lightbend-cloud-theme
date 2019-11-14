@@ -26,6 +26,9 @@
 	font-size: 1rem;
 	margin-bottom: .25rem
 }
+.home-content li p {
+	margin-bottom: 0;
+}
 
 .home-content code {
 	font-size: 0.875rem;
