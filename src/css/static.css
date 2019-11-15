@@ -1,0 +1,8 @@
+@media screen and (min-width: 1024px) {
+	.static.doc {
+		padding-left: 17rem;
+	}
+	.static.doc p {
+		margin: .875rem 0;
+	}
+}

@@ -59,7 +59,7 @@
 .doc h5 > a.anchor::before,
 .doc h6 > a.anchor::before {
   content: "\00a7";
-  color: var(--color-lb-orange);
+  color: var(--color-cloudflow-blue);
 }
 
 .doc h1:hover > a.anchor,
@@ -73,11 +73,11 @@
 
 .doc a,
 .doc a:visited {
-  color: var(--color-lb-orange);
+  color: var(--color-cloudflow-blue);
 }
 
 .doc a:hover {
-  color: var(--color-lb-orange-dkr);
+  color: var(--color-cloudflow-blue);
 }
 
 .doc i.fa {
@@ -143,7 +143,7 @@
 }
 
 thead tr {
-  background: var(--color-lb-slate);
+  background: var(--color-cloudflow-blue);
   color: white;
 }
 tbody tr:nth-child(odd) {
@@ -242,13 +242,13 @@ tbody tr:nth-child(odd) {
 }
 
 .doc .admonitionblock.note .icon {
-  background: var(--color-lb-orange) url(../img/note-white.svg) no-repeat left;
+  background: var(--color-cloudflow-blue) url(../img/note-white.svg) no-repeat left;
   background-position: 5px center;
   background-size: 30px
 }
 
 .doc .admonitionblock.tip .icon {
-  background: var(--color-lb-orange) url(../img/tip-white.svg) no-repeat left;
+  background: var(--color-cloudflow-blue) url(../img/tip-white.svg) no-repeat left;
   background-position: 5px center;
   background-size: 35px
 }
@@ -357,10 +357,14 @@ tbody tr:nth-child(odd) {
 }
 
 .doc h2:not(.discrete) {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--color-cloudflow-dark-blue);
   margin-left: -1rem;
   margin-right: -1rem;
   padding: 0.4rem 1rem 0.1rem;
+  /* custom overide */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
 }
 
 .doc p {
@@ -384,7 +388,7 @@ tbody tr:nth-child(odd) {
 
 #preamble .abstract blockquote {
   background-color: var(--color-lb-off-white);
-  border-left: 5px solid var(--color-lb-orange);
+  border-left: 5px solid var(--color-cloudflow-blue);
   color: #4a4a4a;
   font-size: 0.875em;
   margin: 0;
@@ -481,7 +485,7 @@ tbody tr:nth-child(odd) {
 
 .doc .sidebarblock {
   border: 1px solid var(--color-lb-off-white-dkr);
-  border-left: 2px solid var(--color-lb-orange);
+  border-left: 2px solid var(--color-cloudflow-blue);
   padding: 2rem 1.5rem;
   box-shadow: 0px 5px 5px -4px rgba(0,0,0,0.3);
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{{detag (or page.title 'Untitled')}}}{{#if site.title}} :: {{site.title}}{{/if}}</title>
+	{{#if page.canonicalUrl}}
+	<link rel="canonical" href="{{page.canonicalUrl}}">
+	{{/if}}
+	{{#if page.description}}
+	<meta name="description" content="{{page.description}}">
+	{{/if}}
+	{{#if page.keywords}}
+	<meta name="keywords" content="{{page.keywords}}">
+	{{/if}}
+	{{#if (or antoraVersion site.antoraVersion)}}
+	<meta name="generator" content="Antora {{or antoraVersion site.antoraVersion}}">
+	{{/if}}
+	<link rel="stylesheet" href="{{uiRootPath}}/css/site.css?v-01">
+{{> head}}
+  </head>
+  <body class="home">
+  	<article class="home-content">
+  		<img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
+
+  		{{{page.contents}}}
+	  	
+	  	<div class="btn-panels">
+	  		<a class="btn-panel" href="/docs/current/index.html">
+	  			<span>
+	  				<h3><img class="" src="{{uiRootPath}}/img/cloudflow-icon-square-lockup-full-color.svg">Documentation</h3>
+	  			</span>
+	  		</a> 
+		  	<a class="btn-panel" href="https://github.com/lightbend/cloudflow">
+		  		<span>
+		  			<h3><img class="" src="{{uiRootPath}}/img/github.svg">Contribute</h3>
+		  		</span>
+		  	</a>
+		  	<a class="btn-panel" href="https://www.lightbend.com/conduct">
+		  		<span>
+		  			<h3><img class="" src="{{uiRootPath}}/img/code-of-conduct.svg">Code of Conduct</h3>
+		  		</span>
+		  	</a>
+	  	</div>
+  	</article>
+  	<footer class="footer">
+  		<img class="cloudflow-icon" src="{{uiRootPath}}/img/cloudflow-icon-full-color-flush.svg">
+		{{> footer-privacy}}
+	</footer>
+  </body>
+</html>

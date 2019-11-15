@@ -1,0 +1,84 @@
+.btn {
+	border: 1px solid var(--color-lb-off-white-dkr);
+	padding: .75rem .5rem;
+	display: inline-block;
+	color: var(--color-cloudflow-blue);
+	font-weight: 700;
+	text-decoration: none;
+}
+.btn:hover {
+	border: 1px solid var(--color-cloudflow-blue);
+	background: var(--color-lb-off-white);
+}
+
+.btn-panels {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 2rem 0;
+}
+.btn-panel {
+	border: 1px solid var(--color-lb-off-white-dkr);
+	padding: .75rem .5rem;
+	margin: .5rem .75rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	color: var(--color-cloudflow-blue);
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 1px;
+	text-align: left;
+	position: relative;
+	background: var(--color-lb-off-white);
+}
+
+.btn-panel:hover {
+	text-decoration: none;
+	border: 1px solid var(--color-cloudflow-blue);
+	background: var(--color-lb-off-white);
+}
+.btn-panel:after {
+	content: "\203A";
+	color: var(--color-cloudflow-blue);
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 26px;
+	line-height: 0;
+	display: none;
+}
+.btn-panel span {
+	padding: 0 8px;
+}
+.btn-panel img {
+	height: 25px;
+	margin-right: 5px;
+}
+.btn-panel h3 {
+	margin: 0 0 0 0;
+	display: flex;
+	text-transform: uppercase;
+	align-items: center;
+	font-size: 18px;
+}
+.btn-panel p {
+	margin: 0;
+	font-size: 14px;
+	color: var(--color-cloudflow-dark-blue);
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.btn-panels {
+		flex-direction: row;
+		justify-content: center;
+	}
+	.btn-panel:first-child {
+		margin-left: 0;
+	}
+	.btn-panel:last-child {
+		margin-right: 0;
+	}
+}
