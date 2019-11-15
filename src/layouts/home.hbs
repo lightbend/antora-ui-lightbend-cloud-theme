@@ -23,7 +23,7 @@
   	<article class="home-content">
   		<img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
 
-  		{{{page.contents}}}
+  		
 	  	
 	  	<div class="btn-panels">
 	  		<a class="btn-panel" href="docs/current/index.html">
@@ -42,10 +42,14 @@
 		  		</span>
 		  	</a>
 	  	</div>
+
+	  	{{{page.contents}}}
+	  	
   	</article>
   	<footer class="footer">
   		<img class="cloudflow-icon" src="{{uiRootPath}}/img/cloudflow-icon-full-color-flush.svg">
 		{{> footer-privacy}}
 	</footer>
+	{{> footer-analytics}}
   </body>
 </html>

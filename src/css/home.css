@@ -13,7 +13,11 @@
 }
 .homepage-logo {
 	max-height: 80px;
-	margin: 0 auto 4rem 0;
+	margin: 0 auto 2rem 0;
+}
+
+.home .btn-panels {
+	margin-bottom: 4rem;
 }
 .home-content p {
 	font-size: 1rem;
