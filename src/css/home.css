@@ -1,4 +1,4 @@
-.home {
+.home .site-flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;

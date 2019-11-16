@@ -20,36 +20,38 @@
 {{> head}}
   </head>
   <body class="home">
-  	<article id="page-content" class="home-content">
-  		<img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
+	<div class="site-flex">
+		<article id="page-content" class="home-content">
+			<img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
 
-  		
-	  	
-	  	<div class="btn-panels">
-	  		<a class="btn-panel" href="docs/current/index.html">
-	  			<span>
-	  				<h3><img class="" src="{{uiRootPath}}/img/cloudflow-icon-square-lockup-full-color.svg">Documentation</h3>
-	  			</span>
-	  		</a> 
-		  	<a class="btn-panel" href="https://github.com/lightbend/cloudflow">
-		  		<span>
-		  			<h3><img class="" src="{{uiRootPath}}/img/github.svg">Contribute</h3>
-		  		</span>
-		  	</a>
-		  	<a class="btn-panel" href="https://www.lightbend.com/conduct">
-		  		<span>
-		  			<h3><img class="" src="{{uiRootPath}}/img/code-of-conduct.svg">Code of Conduct</h3>
-		  		</span>
-		  	</a>
-	  	</div>
+			
+			
+			<div class="btn-panels">
+				<a class="btn-panel" href="docs/current/index.html">
+					<span>
+						<h3><img class="" src="{{uiRootPath}}/img/cloudflow-icon-square-lockup-full-color.svg">Documentation</h3>
+					</span>
+				</a> 
+				<a class="btn-panel" href="https://github.com/lightbend/cloudflow">
+					<span>
+						<h3><img class="" src="{{uiRootPath}}/img/github.svg">Contribute</h3>
+					</span>
+				</a>
+				<a class="btn-panel" href="https://www.lightbend.com/conduct">
+					<span>
+						<h3><img class="" src="{{uiRootPath}}/img/code-of-conduct.svg">Code of Conduct</h3>
+					</span>
+				</a>
+			</div>
 
-	  	{{{page.contents}}}
-	  	
-  	</article>
-  	<footer class="footer">
-  		<img class="cloudflow-icon" src="{{uiRootPath}}/img/cloudflow-icon-full-color-flush.svg">
-		{{> footer-privacy}}
-	</footer>
+			{{{page.contents}}}
+			
+		</article>
+		<footer class="footer">
+			<img class="cloudflow-icon" src="{{uiRootPath}}/img/cloudflow-icon-full-color-flush.svg">
+			{{> footer-privacy}}
+		</footer>
+	</div>
 	{{> footer-analytics}}
   </body>
 </html>
