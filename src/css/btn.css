@@ -15,12 +15,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: stretch;
 	margin: 2rem 0;
 }
 .btn-panel {
 	border: 1px solid var(--color-lb-off-white-dkr);
 	padding: .75rem .5rem;
-	margin: .5rem .75rem;
+	margin: .5rem 0rem;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -70,10 +71,13 @@
 	display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 700px) {
 	.btn-panels {
 		flex-direction: row;
 		justify-content: center;
+	}
+	.btn-panel {
+		margin: .5rem .75rem;
 	}
 	.btn-panel:first-child {
 		margin-left: 0;

@@ -1,19 +1,22 @@
-.home {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+.home > article, .home > footer {
+	display: block;
+	margin: 0 auto;
 }
 .home-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 2rem 1rem 6rem 1rem;
+	padding: 0rem 1rem 6rem 1rem;
 	max-width: 920px;
 }
+
 .homepage-logo {
-	max-height: 80px;
-	margin: 0 auto 4rem 0;
+	max-height: 60px;
+	margin: 0 auto 1rem auto;
+}
+
+.home .btn-panels {
+	margin-bottom: 4rem;
 }
 .home-content p {
 	font-size: 1rem;
@@ -56,4 +59,14 @@
 
 .home footer .legal-social .footer-logo {
 	float: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.home-content {
+		padding: 2rem .5rem 6rem .5rem;
+	}
+	.homepage-logo {
+		max-height: 80px;
+		margin: 0 auto 2rem auto;
+	}
 }
