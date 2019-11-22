@@ -1,5 +1,9 @@
 = Cloudflow, quickly develop, orchestrate, and operate distributed streaming applications on Kubernetes
+:description: Description goes here
 :page-layout: home
+:page-social-share-image: https://cloudflow.io/_/img/cloudflow-logo-social.jpg
+
+= This is a heading One
 
 Cloudflow enables users to quickly develop, orchestrate, and operate distributed streaming applications on Kubernetes. Cloudflow allows you to easily break down your streaming application to smaller composable components and wire them together with schema-based contracts.
 
