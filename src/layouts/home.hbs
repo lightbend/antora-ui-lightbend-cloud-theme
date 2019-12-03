@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title>{{{detag (or page.title 'Untitled')}}}{{#if site.title}} | {{site.title}}{{/if}}</title>
-{{> head}}
+  	<title>{{{detag (or page.title 'Untitled')}}}{{#if site.title}} {{/if}}</title>
+{{> home-head}}
   </head>
   <body class="home">
 		<article id="page-content" class="home-content">
-			<img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
-			<nav class="btn-panels">
+      <img class="homepage-logo" src="{{uiRootPath}}/img/cloudflow-full-color.svg">
+			<h1 align="center">Streaming Data Pipelines on Kubernetes</h1>
+      <nav class="btn-panels">
 				<a class="btn-panel" href="docs/current/index.html">
 					<span>
-						<h3><img class="" src="{{uiRootPath}}/img/cloudflow-icon-square-lockup-full-color.svg">Documentation</h3>
+						<h3><img class="" src="{{uiRootPath}}/img/cloudflow-icon-square-lockup-full-color.svg">Docs</h3>
 					</span>
 				</a> 
 				<a class="btn-panel" href="https://github.com/lightbend/cloudflow">
@@ -21,6 +22,16 @@
 				<a class="btn-panel" href="https://www.lightbend.com/conduct">
 					<span>
 						<h3><img class="" src="{{uiRootPath}}/img/code-of-conduct.svg">Code of Conduct</h3>
+					</span>
+				</a>
+        <a class="btn-panel" href="https://discuss.lightbend.com/c/cloudflow">
+					<span>
+						<h3><img class="" src="./_/img/discuss.svg">Discuss</h3>
+					</span>
+				</a>
+				<a class="btn-panel" href="https://gitter.im/lightbend/cloudflow">
+					<span>
+						<h3><img class="" src="./_/img/glitter.svg">Gitter</h3>
 					</span>
 				</a>
 			</nav>
