@@ -1,4 +1,4 @@
-= Hardware and Software Requirements
+= Example Docs for Skinning Purposes
 Author Name
 :idprefix:
 :idseparator: -
@@ -14,11 +14,11 @@ Author Name
 :page-supergroup-mac-ubuntu: OS
 
 
-== Configure the service locator
+== Suspendisse tincidunt varius velit
 
-Lagom uses a service locator to look up other microservices. The service locator takes the service name defined in a Lagom service descriptor and translates it into an address to use for communication. In development, when you are running with the `runAll` command, Lagom starts up its own development service locator, and injects that into each microservice. You don't have to worry about service lookup until production. Once out of the development environment, you need to provide a service locator yourself.
+Aenean vitae orci ut lorem semper auctor vitae at ex. Fusce lobortis magna mauris, sit amet cursus erat iaculis vel. Aenean eget lacus vel nibh suscipit pharetra. Nunc facilisis turpis ut leo tincidunt luctus. In sit amet odio sit amet purus convallis vulputate. Curabitur laoreet et lacus in ornare.
 
-Akka provides an API called https://doc.akka.io/docs/akka/current/discovery/index.html[Akka Discovery] that includes a number of backends. Several are compatible with a Kubernetes environment. We're going to use a service locator implementation built on Akka Discovery, and then we're going to use the DNS implementation of Akka discovery to discover other services.
+Donec volutpat sed tellus non gravida. Maecenas quis ornare est, vel convallis turpis. In at congue lacus. In eu suscipit magna, nec maximus odio. Aenean vitae orci ut lorem semper auctor vitae at ex. Fusce lobortis magna mauris, sit amet cursus erat iaculis vel. Aenean eget lacus vel nibh suscipit pharetra.
 
 == Formatted Text
 See: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#formatted-text[window=_blank]
@@ -952,9 +952,9 @@ Find the following lines in `shopping-cart.yaml`:
 
 == Configure the service locator
 
-Lagom uses a service locator to look up other microservices. The service locator takes the service name defined in a Lagom service descriptor and translates it into an address to use for communication. In development, when you are running with the `runAll` command, Lagom starts up its own development service locator, and injects that into each microservice. You don't have to worry about service lookup until production. Once out of the development environment, you need to provide a service locator yourself.
+Aenean vitae orci ut lorem semper auctor vitae at ex. Fusce lobortis magna mauris, sit amet cursus erat iaculis vel. Aenean eget lacus vel nibh suscipit pharetra. Nunc facilisis turpis ut leo tincidunt luctus. In sit amet odio sit amet purus convallis vulputate. Curabitur laoreet et lacus in ornare.
 
-Akka provides an API called https://doc.akka.io/docs/akka/current/discovery/index.html[Akka Discovery] that includes a number of backends. Several are compatible with a Kubernetes environment. We're going to use a service locator implementation built on Akka Discovery, and then we're going to use the DNS implementation of Akka discovery to discover other services.
+Donec volutpat sed tellus non gravida. Maecenas quis ornare est, vel convallis turpis. In at congue lacus. In eu suscipit magna, nec maximus odio. Aenean vitae orci ut lorem semper auctor vitae at ex. Fusce lobortis magna mauris, sit amet cursus erat iaculis vel. Aenean eget lacus vel nibh suscipit pharetra.
 
 .. If using Maven, check the project `pom.xml` to make sure the value `scala.binary.version` is defined there and set to the value of `2.12`.
 
@@ -984,26 +984,3 @@ libraryDependencies +=
   "com.lightbend.lagom" %% "lagom-scaladsl-akka-discovery-service-locator" % "1.5.1"
 ----
 |===
-
-.. In the `prod-application.conf` file, the following configures Akka discovery to use DNS as the discovery method:
-+
-```conf
-akka.discovery.method = akka-dns
-```
-+
-If you're using Java with Lagom's Guice backend, this completes the service locator configuration. The `lagom-javadsl-akka-discovery` module automatically loads a Guice module that provides the service locator implementation. If you're using Scala, you will need to wire in the service locator yourself.
-
-.. For Scala, modify your production application cake to mix the Akka discovery service locator components in. Open `com/example/shoppingcart/impl/ShoppingCartLoader.scala` from the `shopping-cart/src/main/scala` directory, and modify the `load` method as follows:
-+
-```scala
-import com.lightbend.lagom.scaladsl.akkadiscovery.AkkaDiscoveryComponents
-
-override def load(context: LagomApplicationContext): LagomApplication =
-    new ShoppingCartApplication(context) with AkkaDiscoveryComponents
-```
-:sectnums!:
-
-== What's next
-
-With the microservice configuration and the deployment spec ready, we need to add the Shopping Cart configuration necessary for Forming an Akka Cluster.
-
