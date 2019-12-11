@@ -22,7 +22,7 @@ Preview the site homepage at: http://localhost:5252
 Preview docs at: http://localhost:5252/docs/preview.html
 
 
-*Please note* that the theme contains files in the `src` directory that are rendered on cloudflow.io website and docs. These files are common FrontEnd ones, such as HTML templating using handlebars `.hbs`, CSS, JavaScript and Images. For example if you need to update the site navigation, or the site footer, fix a CSS bug etc, you do so within this `src` directory.
+*Please note* that the theme contains files in the `src` directory that are rendered on the cloudflow.io website and docs. These files are common frontend ones, such as HTML templating using handlebars `.hbs`, CSS, JavaScript and Images. For example if you need to update the site navigation, the site footer, fix a CSS bug etc, you do so within this `src` directory.
 
 Also *important* to note are the `.adoc` files inside the `preview-src` directory. These files are NOT rendered in the live site, their function is to provide the theme dummy content for the purpose of styling only. 
 
