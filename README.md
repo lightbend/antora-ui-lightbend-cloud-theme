@@ -1,2 +1,2 @@
-# antora-ui-lightbend-theme
-Lightbend themed skin for Antora docs
+# antora-ui-lightbend-cloud-theme
+Cloudflow themed skin for Antora docs

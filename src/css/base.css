@@ -58,12 +58,31 @@ body {
 }
 
 a {
+  color: var(--color-cloudflow-blue);
   text-decoration: none;
 }
 
+/* unvisited link */
+a:link {
+  color: var(--color-cloudflow-blue);
+}
+
+/* visited link */
+a:visited {
+  color: var(--color-cloudflow-blue);
+}
+
+/* mouse over link */
 a:hover {
+  color: var(--color-cloudflow-blue);
   text-decoration: underline;
 }
+
+/* selected link */
+a:active {
+  color: var(--color-cloudflow-blue);
+}
+
 
 code,
 kbd,

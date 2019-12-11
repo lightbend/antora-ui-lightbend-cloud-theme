@@ -93,7 +93,7 @@ page:
       url: '#'
       urlType: fragment
       items:
-      - content: Brand&#8217;s Hardware &amp; Software Requirements
+      - content: Example Docs for Skinning Purposes
         url: /xyz/5.2/index.html
         urlType: internal
       - title: IDE Integration
