@@ -11,7 +11,7 @@ With this theme you can edit/update the user interface, page templates and certa
 
 This theme builds upon the Antora Default UI as https://docs.antora.org/antora-ui-default/[documentented here].
 
-After setting up the https://docs.antora.org/antora-ui-default/prerequisites/[UI Development Prerequisites], you're be ready to make updates and changes to the Cloudflow theme.
+After setting up the https://docs.antora.org/antora-ui-default/prerequisites/[UI Development Prerequisites], you will be ready to make updates and changes to the Cloudflow theme.
 
 CD into the root directory and run:
 
