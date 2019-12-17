@@ -64,6 +64,19 @@
 					</select>
 				</span>
 			{{/if}}
+			
+			{{#if page.attributes.supergroup-kubernetes-dists}}
+				<span>
+					<label>{{page.attributes.supergroup-kubernetes-dists}}</label>
+					<select class="supergroup" name="supergroup-kubernetes-dists">
+						<option class="group" value="group-kubernetes">Kubernetes</option>
+						<option class="group" value="group-openshift">OpenShift</option>
+						<option class="group" value="group-kubernetes">GKE</option>
+						<option class="group" value="group-openshift">AKS</option>
+						<option class="group" value="group-openshift">EKS</option>
+					</select>
+				</span>
+			{{/if}}
 
 			{{#if page.attributes.supergroup-mac-ubuntu}}
 				<span>
