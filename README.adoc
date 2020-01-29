@@ -27,3 +27,15 @@ Preview docs at: http://localhost:5252/docs/preview.html
 Also *important* to note are the `.adoc` files inside the `preview-src` directory. These files are NOT rendered in the live site, their function is to provide the theme dummy content for the purpose of styling only. 
 
 *Lastly*, until automated you will need to also build a ZIP package of the theme and include it in your PR. Once you are happy with you updates, run the following command `gulp bundle:pack` from within the root directory. This will add a ZIP file to your PR. 
+
+== Fix to issue #21
+
+In the Cloudflow doc repo, we have more than one component. For example, the home page is a non-versioned component. We also plan to split out the developing information so that it can more easily be shared by both the OSS and the commercial doc. Unfortunately, this results in these other components showing up in the version selector at the bottom of the TOC. 
+
+To fix this, I modified the navigation-explore.hbs file as follows:
+
+* On lines 10 and 15, added {{#unless prerelease}}, which are closed on lines 21 and 25.
+* On line 12, I commented out the line that adds the component title, otherwise, the title of the component appears.
+
+In the doc project, components to be "hidden" from the component selector must define prerelease: Beta in their antora.yml file. 
+
