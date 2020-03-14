@@ -339,7 +339,7 @@ body {
 .header-logo {
   height: 36px;
 }
-.site-id {
+.site-id, a.site-id {
   position: absolute;
   color: rgba(255,255,255,.8);
   left: 118px;
