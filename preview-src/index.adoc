@@ -1,18 +1,40 @@
-= Page Title goes here
-:description: Description goes here
+= Cloudflow -- streaming data pipelines on Kubernetes
 :page-layout: home
-:page-social-share-image: https://cloudflow.io/_/img/cloudflow-logo-social.jpg
+:description: Quickly develop, orchestrate, and operate distributed streaming data pipelines with Apache Spark, Apache Flink, and Akka Streams on Kubernetes
+:keywords: spark, kubernetes, stream, streaming, stream processing, apache spark, apache flink, akka, akka streams, akka-streams, pipelines, streaming pipelines, streaming pipelines on kubernetes, developer, streaming applications
 
-Donec volutpat sed tellus non gravida. Maecenas quis ornare est, vel convallis turpis. In at congue lacus. In eu suscipit magna, nec maximus odio. 
 
-Aenean vitae orci ut lorem semper auctor vitae at ex. Fusce lobortis magna mauris, sit amet cursus erat iaculis vel. Aenean eget lacus vel nibh suscipit pharetra. Nunc facilisis turpis ut leo tincidunt luctus. In sit amet odio sit amet purus convallis vulputate. Curabitur laoreet et lacus in ornare.
+Cloudflow enables you to quickly develop, orchestrate, and operate distributed streaming applications on Kubernetes. 
+With Cloudflow, streaming applications are comprised of small composable components wired together with schema-based contracts. 
+Cloudflow can dramatically accelerate streaming application development--reducing the time required to create, package, and deploy--from weeks to hours. 
 
-Vestibulum ante ipsum primis in faucibus orci luctus:
+link:https://www.youtube.com/watch?v=-9pVwCkkE1I[Watch on YouTube ,role=yt-widget]
 
-* Nunc ultricies magna `nec semper` sollicitudin
-* Aenean posuere fermentum nisl
-* Fusce lobortis magna mauris
-* Sed rhoncus, libero at porttitor aliquam
-* https://docs.antora.org/antora-ui-default/[Antora UI Documentation]
 
-Fusce interdum imperdiet sem, sit amet viverra libero sollicitudin sit amet. Nulla non ex rhoncus, pharetra lorem sit amet, convallis nibh. Praesent non dapibus nisi. Phasellus id nibh euismod, ornare dui quis, consectetur ex. Sed at lectus nulla.
+With its powerful abstractions, Cloudflow allows you to easily define the most complex streaming applications:
+
+* Develop: Focus only on business logic, leave the boilerplate to us.
+* Build: We provide all the tooling for going from business logic to a deployable Docker image.
+* Deploy: We provide Kubernetes tooling to deploy your distributed system with a single command, and manage durable connections between processing stages.
+* Operate: With a Lightbend subscription, you get all the tools you need to provide insights, observability, and lifecycle management for evolving your distributed streaming application.
+
+
+Cloudflow integrates with popular streaming engines like Akka, Spark and Flink. It also comes with a powerful CLI tool to easily manage, scale and configure streaming applications at runtime. In a nutshell, Cloudflow is an application development toolkit composed of:
+
+* An API definition for `Streamlet`, the core abstraction in Cloudflow.
+* An extensible set of runtime implementations for `Streamlet`(s). Cloudflow provides support for popular streaming runtimes, like Spark's Structured Streaming, Flink, and Akka.
+* A `Streamlet` composition model driven by a `blueprint` definition.
+* A sandbox execution mode that accelerates the development and testing of your applications.
+* A set of `sbt` plugins that are able to package your application into a deployable container.
+* The Cloudflow operator, a Kubernetes operator that manages the application lifecycle on Kubernetes.
+* A CLI, in the form of a `kubectl plugin`, that facilitates manual and scripted management of the application.
+
+== Where To Go Next?
+* link:./docs/current/index.html[Introducing Cloudflow]
+* link:./docs/current/app-development-process.html[The Cloudflow development process]
+* link:./docs/current/get-started/index.html[Getting started with Cloudflow]
+* link:./docs/current/develop/cloudflow-streamlets.html[Developing applications with Cloudflow]
+* https://github.com/lightbend/cloudflow/blob/master/installer/README.md[Setup Cloudflow on a Kubernetes Cluster]
+* Chat with us on https://gitter.im/lightbend/cloudflow[Gitter]
+* Ask us a question on https://discuss.lightbend.com/c/cloudflow[Discuss]
+* Want to https://github.com/lightbend/cloudflow/blob/master/CONTRIBUTING.md[contribute]?
