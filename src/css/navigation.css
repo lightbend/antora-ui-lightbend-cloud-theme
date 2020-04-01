@@ -5,7 +5,7 @@
 .navigation-container {
   display: none;
   position: fixed;
-  top: var(--navbar-height);
+  top: calc(var(--navbar-height) + var(--oss-banner-height));
   left: 0;
   width: 100%;
   font-size: 0.9375rem;
@@ -43,7 +43,7 @@
   background-color: #fafafa;
   position: relative;
   top: var(--toolbar-height);
-  height: calc(100vh - var(--navbar-height) - var(--toolbar-height));
+  height: calc(100vh - var(--navbar-height) - var(--oss-banner-height) - var(--toolbar-height));
 }
 
 @media screen and (min-width: 769px) {
@@ -54,10 +54,10 @@
 
 @media screen and (min-width: 1024px) {
   .navigation {
-    top: var(--navbar-height);
+    top: calc(var(--navbar-height) + var(--oss-banner-height));
     box-shadow: none;
     position: sticky;
-    height: calc(100vh - var(--navbar-height));
+    height: calc(100vh - var(--navbar-height) - var(--oss-banner-height));
   }
 }
 

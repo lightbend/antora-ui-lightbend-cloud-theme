@@ -93,29 +93,29 @@ body.home {
 	flex-direction: column;
 	justify-content: center;
 }
-.home-content nav.home-toc li {
+.home-content nav.home-toc ul li {
 	padding: .5rem 1rem;
 	display: block;
 }
-.home-content nav.home-toc a {
+.home-content nav.home-toc ul li a {
 	color: white;
 	text-decoration: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: 1px solid rgba(255,255,255,.5);
-	background: var(--color-cloudflow-blue)	;
+	background: var(--color-cloudflow-blue);
 	padding: .5rem 2rem;
 	border-radius: 250px;
 	text-align: center;
 	font-weight: 400;
 }
-.home-content nav.home-toc img {
+.home-content nav.home-toc ul li img {
 	width: 20px;
 	height: 20px;
 	margin: 0 5px 0 0
 }
-.home-content nav.home-toc svg {
+.home-content nav.home-toc ul li svg {
 	width: 20px;
 	height: 20px;
 	margin: 0 5px 0 0
@@ -126,30 +126,40 @@ body.home {
 	.home-content nav.home-toc {
 		padding: 0;
 		background: var(--color-cloudflow-dark-blue);
+		background: linear-gradient(#ffffff, var(--color-lb-off-white));
+		border-bottom: 1px solid var(--color-lb-off-white-dkr);
+		box-shadow: 0px -8px 12px 0 rgba(255, 255, 255, 0.2);
 	}
 	.home-content nav.home-toc ul {	
 		flex-direction: row;
 	}
-	.home-content nav.home-toc li {
-		padding: 2rem .25rem;
+	.home-content nav.home-toc ul li {
+		padding: 0;
 	}
-	.home-content nav.home-toc a { 
+	.home-content nav.home-toc ul li a { 
+		height: 80px;
+		vertical-align: center;
+		line-height: 70px;
+		color: var(--color-cloudflow-blue);
+		font-weight: 700;
 		padding: .5rem 2rem;
-		border: 1px solid rgba(255,255,255,.5);
+		border: none;
+		border-right: 1px solid var(--color-lb-off-white-dkr);
+		border-radius: 0;
 		background: transparent;
 		transition: all 200ms ease-in-out;
+		text-transform: uppercase;
 	}
-	.home-content nav.home-toc a:hover {
-		background: #0a4d5e;
+	.home-content nav.home-toc ul li a:hover {
+		background: var(--color-lb-off-white);
 		transition: all 200ms ease-in-out;
-		color: #2cc4ea;
-		border-color: #2cc4ea;
+		box-shadow: inset 0 -4px 0 var(--color-cloudflow-blue), inset 0 0 3px var(--color-lb-off-white-dkr);
 	}
-	.home-content nav.home-toc a .svg-fill {
-		transition: fill 200ms ease-in-out;
+	.home-content nav.home-toc ul li:first-child a { 
+		border-left: 1px solid var(--color-lb-off-white-dkr);
 	}
-	.home-content nav.home-toc a:hover .svg-fill {
-		fill: #2cc4ea;
+	.home-content nav.home-toc ul li a .svg-fill {
+		fill: var(--color-cloudflow-blue);
 		transition: fill 200ms ease-in-out;
 	}
 }

@@ -1,4 +1,5 @@
 :root {
+  --oss-banner-height: 70px;
   --navbar-height: 80px;
 }
 
@@ -7,7 +8,14 @@ html.is-clipped--navbar {
 }
 
 body {
-  padding-top: var(--navbar-height);
+  padding-top: calc(var(--navbar-height) + var(--oss-banner-height));
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  width: 100%;
 }
 
 .navbar {
@@ -15,11 +23,8 @@ body {
   color: var(--color-navbar-text);
   font-size: 0.814rem;
   height: var(--navbar-height);
-  position: fixed;
-  top: 0;
   width: 100%;
   word-wrap: break-word;
-  z-index: 3;
 }
 
 .navbar a {
@@ -196,7 +201,7 @@ body {
   .navbar-menu.is-active {
     display: block;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
-    max-height: calc(100vh - var(--navbar-height));
+    max-height: calc(100vh - var(--navbar-height) - var(--oss-banner-height));
     overflow-y: auto;
   }
 

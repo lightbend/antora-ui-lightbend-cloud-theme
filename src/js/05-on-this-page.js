@@ -44,8 +44,10 @@
 
   //should it stick
   var intViewportHeight = window.innerHeight
+  //console.log("intViewportHeight "+intViewportHeight);
   var menuHeight = menu.offsetHeight
-  if(menuHeight < intViewportHeight){
+  //console.log("menuHeight " +menuHeight);
+  if(menuHeight < (intViewportHeight - 210)){
     menu.classList.add("stick")
   }
 
