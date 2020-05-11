@@ -87,6 +87,16 @@
 					</select>
 				</span>
 			{{/if}}
+			
+			{{#if page.attributes.supergroup-web-cli}}
+				<span>
+					<label>{{page.attributes.supergroup-web-cli}}</label>
+					<select class="supergroup" name="supergroup-web-cli">
+						<option class="group" value="group-web">Web</option>
+						<option class="group" value="group-cli">CLI</option>
+					</select>
+				</span>
+			{{/if}}
 
 		</fieldset>
 		
